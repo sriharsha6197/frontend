@@ -8,7 +8,7 @@ pipeline {
         }
         stage('code quality checks'){
             steps{
-                echo "code qiality checks using sonar qube"
+                echo "code quality checks using sonar qube"
                 sh 'sonar-scanner -Dsonar.projectkey=frontend -Dsonar.host.url=http://172.31.17.88:9000 -Dsonar.login=admin -Dsonar.password=harsha123 -Dsonar.qualitygate.wait=true'
             }
         }
