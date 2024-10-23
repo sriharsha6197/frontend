@@ -13,9 +13,6 @@ pipeline {
             }
         }
         stage('code deploy'){
-            input{
-                message "should be continue?"
-            }
             steps{
                 echo "code release"
             }
